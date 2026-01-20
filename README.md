@@ -19,4 +19,4 @@ A simple to-do list application built with HTML, CSS, and JavaScript.
 - JavaScript
 
 ## Author
-Bartholomew Junior
+Bartholomew Junior.
