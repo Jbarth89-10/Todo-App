@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web App</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  
+  <body>
+    
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="main-grid">
+      
+      <section class="card">
+        <h2 class="section-title">profile</h2>
+        <img src="images/profile.jpeg" alt="My profile photo" width="200" class="profile-img">
+      </section>
+
+
+      <section class="card">
+        <h2 class="section-title">To-Do App</h2>
+
+        <div class="task-controls">
+          <input type="text" id="taskInput" placeholder="Enter a task">
+          <button id="addTaskBtn">Add Task✅</button>
+        </div>
+        
+        <ul id="taskList"></ul>
+      </section>
+
+
+    </main>
+
+  <script src="js/script.js"></script>
+  </body>
+</html>

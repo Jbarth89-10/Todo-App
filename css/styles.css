@@ -1,0 +1,104 @@
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: aqua;
+}
+
+
+nav {
+  padding: 15px;
+}
+
+nav a {
+  margin-right: 15px;
+  color: #2563eb;
+}
+
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.task-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#addTaskBtn {
+  align-self: flex-start;
+}
+
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+li {
+  margin-bottom: 8px;
+  animation: fadeIn 0.3s ease;
+}
+
+li input {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+li button {
+  padding: 2px 4px;
+  font-size: 10px;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3);
+}
+
